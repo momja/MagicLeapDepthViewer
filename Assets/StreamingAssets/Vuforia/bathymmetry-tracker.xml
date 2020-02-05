@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="upperleft_tex" size="0.481800 0.481800" />
+    <ImageTarget name="lowerright_tex" size="0.481800 0.481800" />
+    <ImageTarget name="lowerleft_tex" size="0.481800 0.481800" />
+    <ImageTarget name="upperright_tex" size="0.481800 0.481800" />
+    <ImageTarget name="upperright" size="0.394600 0.394600" />
+    <ImageTarget name="upperleft" size="0.394600 0.394600" />
+    <ImageTarget name="lowerright" size="0.394600 0.394600" />
+    <ImageTarget name="lowerleft" size="0.394600 0.394600" />
+    <ImageTarget name="lion" size="0.386900 0.386017" />
+    <ImageTarget name="fish" size="0.386900 0.385959" />
+    <ImageTarget name="dog" size="0.386900 0.388175" />
+    <ImageTarget name="bird" size="0.386900 0.386900" />
+    <ImageTarget name="Card4" size="57.150002 81.503693" />
+    <ImageTarget name="Card3" size="57.200001 85.054504" />
+    <ImageTarget name="Card2" size="57.150002 80.022957" />
+    <ImageTarget name="Card1" size="57.150002 83.824524" />
+    <ImageTarget name="test_vuforia" size="133.350006 177.888901" />
+  </Tracking>
+</QCARConfig>
