@@ -1,45 +1,61 @@
 ﻿using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
+// using UnityEngine.XR.MagicLeap;
 
 public class getCenterpoint : MonoBehaviour
 {
-    GameObject ul;
-    GameObject ll;
-    GameObject ur;
-    GameObject lr;
+    private Vector3 previousPosition;
+    private GameObject _vuforiaTracker;
+    // private MLInputController _controller;
+
+    private GameObject bathymmetry;
+    private GameObject isosurface_data;
     
-    // Start is called before the first frame update
     void Start()
     {
-        // Initialize the anchor points
-        ul = GameObject.Find("upperleft");
-        ll = GameObject.Find("lowerleft");
-        ur = GameObject.Find("upperright");
-        lr = GameObject.Find("lowerright");
+        // Initialize the anchor point
+        _vuforiaTracker = GameObject.Find("ImageTarget");
+
+        bathymmetry = transform.GetChild(1).gameObject;
+        isosurface_data = transform.GetChild(0).gameObject;
+
+        // Setup Magic Leap controller
+        // MLInput.Start();
+        // MLInput.OnControllerButtonDown += OnButtonDown;
+        // MLInput.OnControllerButtonUp += OnButtonUp;
+        // _controller = MLInput.GetController(MLInput.Hand.Left);
+    }
+
+    void OnDestroy()
+    {
+        // MLInput.OnControllerButtonDown -= OnButtonDown;
+        // MLInput.OnControllerButtonUp -= OnButtonUp;
+        // MLInput.Stop();
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        Vector3 ul_pos = ul.transform.position;
-        Vector3 ll_pos = ll.transform.position;
-        Vector3 ur_pos = ur.transform.position;
-        Vector3 lr_pos = lr.transform.position;
-
-        // Counterclockwise list of points making up the corners of our object.
-        Vector3[] corner_coordinates = { ul_pos, ll_pos, lr_pos, ur_pos };
-
-        Vector3 centerpoint = Vector3.zero;
-
-        for (int i = 0; i < corner_coordinates.Length; i++) {
-            centerpoint += corner_coordinates[i];
+        if (Vector3.Distance(previousPosition, transform.position) > 0.05) {
+            print("Jittering");
         }
-        centerpoint = centerpoint / corner_coordinates.Length;
 
-        print($"Center point: {centerpoint}");
-        gameObject.transform.position = centerpoint;
+        previousPosition = transform.position;
+    }
+
+    void VuforiaTargetLost() {
+        print("Vuforia target lost.");
+        print("Enabling Magic Leap Tracking");
+        // bathymmetry.SetActive(false);
+        isosurface_data.SetActive(false);
+    }
+
+    void VuforiaTargetFound() {
+        print("Vuforia target found.");
+        print("Disabling Magic Leap Tracking");
+        // bathymmetry.SetActive(true);
+        isosurface_data.SetActive(true);
     }
 }
