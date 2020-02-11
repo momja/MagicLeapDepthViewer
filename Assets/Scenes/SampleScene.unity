@@ -335,7 +335,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'small_pebblesMaterial
+  m_Name: 'test_image_2Material
 
     13222'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
@@ -350,7 +350,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 98a1741f2e9e45c6a112b2bb12e44a5a, type: 3}
+        m_Texture: {fileID: 2800000, guid: f52e5837287c45b5b738f86206d3e27b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -366,7 +366,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 77e2041d7aff14dd68ed0001822ed540,
         type: 3}
       propertyPath: m_Name
-      value: timestep_0
+      value: timestep
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 77e2041d7aff14dd68ed0001822ed540,
         type: 3}
@@ -735,7 +735,18 @@ MonoBehaviour:
   StatusFilter: 1
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 52038360}
+        m_MethodName: SendMessage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: VuforiaTargetFound
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   OnTargetLost:
@@ -766,7 +777,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 4bc5fd733b147194692297d23f623541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: small_pebbles
+  mTrackableName: test_image_2
   mPreserveChildSize: 0
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/bathymmetry-tracker-2.xml
