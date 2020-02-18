@@ -1,0 +1,42 @@
+<manifest xmlns:ml="magicleap" ml:developer_id="8d64906b-0edb-41cc-96ec-81fab26d98b4" ml:package="com.ivlab.vuforiademo" ml:version_code="1" ml:version_name="">
+  <application ml:min_api_level="7" ml:sdk_version="1.0" ml:visible_name="vuforiademo">
+    
+    <uses-privilege ml:name="AddressBookRead" />
+    
+    <uses-privilege ml:name="AddressBookWrite" />
+    
+    <uses-privilege ml:name="AudioCaptureMic" />
+    
+    <uses-privilege ml:name="CameraCapture" />
+    
+    <uses-privilege ml:name="GesturesSubscribe" />
+    
+    <uses-privilege ml:name="GesturesConfig" />
+    
+    <uses-privilege ml:name="HandMesh" />
+    
+    <uses-privilege ml:name="Internet" />
+    
+    <uses-privilege ml:name="PcfRead" />
+    
+    <uses-privilege ml:name="WorldReconstruction" />
+    
+    <uses-privilege ml:name="ControllerPose" />
+    
+    <uses-privilege ml:name="CoarseLocation" />
+    
+    <uses-privilege ml:name="FineLocation" />
+    
+    <uses-privilege ml:name="ComputerVision" />
+    
+    <uses-privilege ml:name="ComputerVision" />
+    <uses-privilege ml:name="LowLatencyLightwear" />
+    <uses-privilege ml:name="CameraCapture" />
+    <uses-privilege ml:name="PcfRead" />
+    <uses-privilege ml:name="Internet" />
+    <uses-privilege ml:name="LocalAreaNetwork" />
+    <component ml:binary_name="bin/Player.elf" ml:name=".fullscreen" ml:type="Fullscreen" ml:visible_name="vuforiademo">
+      <icon ml:model_folder="Icon/Model" ml:portal_folder="Icon/Portal" />
+    </component>
+  </application>
+</manifest>
