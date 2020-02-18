@@ -15,7 +15,6 @@ public class TrackerObject : MonoBehaviour
     void Start()
     {
         TrackerObject.trackerObjects[posIdentifier] = this;
-
         // transform offset to scaled size
         originOffset = originOffset / transform.localScale.x;
     }

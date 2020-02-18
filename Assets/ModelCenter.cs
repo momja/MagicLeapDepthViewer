@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class ModelCenter : MonoBehaviour
 {
+    Vector3 originalScale;
     // Start is called before the first frame update
     void Start()
     {
-        
+        originalScale = gameObject.transform.localScale;        
     }
 
     // Update is called once per frame
@@ -28,8 +29,10 @@ public class ModelCenter : MonoBehaviour
             }
         }
         if (enabledTrackerCount == 0) {
+            gameObject.transform.localScale = new Vector3(0,0,0);
             return;
         }
+        gameObject.transform.localScale = originalScale;
         avgCenter = avgCenter/enabledTrackerCount;
         avgLookAtRotation = avgLookAtRotation/enabledTrackerCount;
         gameObject.transform.position = avgCenter;
