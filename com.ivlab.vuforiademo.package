@@ -2,7 +2,7 @@
 
 
 USES = \
-	"C:\Users\Max Omdal\Documents\Vuforia_Demo\Temp/StagingArea\assets" \
+	/Users/maxomdal/Vuforia_demo/Temp/StagingArea/assets \
 
 
 ######### DO NOT EDIT ABOVE #########

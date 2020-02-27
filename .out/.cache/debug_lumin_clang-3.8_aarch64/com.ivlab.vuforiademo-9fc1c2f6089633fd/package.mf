@@ -1,0 +1,386 @@
+{
+ "entries": [
+  {
+   "compression": 8,
+   "hash": "5925de9f4d7b83c65d1fd7b25ced5f0bf8c27e73",
+   "pkgpath": "bin/libc++_shared.so",
+   "size": 976832,
+   "src": "/Users/maxomdal/MagicLeap/mlsdk/v0.23.0/lumin/stl/libc++/lib/libc++_shared.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/maxomdal/Vuforia_demo/max-vuforiatracking.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "07e1ec9bb3d68e3a1f74cf19ab9259317fa63c39",
+   "xfrm_path": "/Users/maxomdal/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-9fc1c2f6089633fd/libc++_shared.so-fafc1b77783d628c",
+   "xfrm_size": 977590
+  },
+  {
+   "compression": 8,
+   "hash": "9d7d2295b576921ce25b09be7c95554f4b11a0d7",
+   "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
+   "size": 3501796,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "56e1b98232a939b277a187df0d95ab327a62bfe8",
+   "pkgpath": "bin/libil2cpp.so",
+   "size": 54069984,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Native/libil2cpp.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/maxomdal/Vuforia_demo/max-vuforiatracking.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "5b2ab76f15a4ad608632d68bfccce941ce54f02e",
+   "xfrm_path": "/Users/maxomdal/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-9fc1c2f6089633fd/libil2cpp.so-2cbd052dc596dcc6",
+   "xfrm_size": 54070742
+  },
+  {
+   "compression": 8,
+   "hash": "eb463901d6f69c739181911a175309562ca388ce",
+   "pkgpath": "bin/AudioPluginMSASpatializer.so",
+   "size": 286544,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/AudioPluginMSASpatializer.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/maxomdal/Vuforia_demo/max-vuforiatracking.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "d1fc3a7fd8262abe47b3c9bbdd343ef389417df2",
+   "xfrm_path": "/Users/maxomdal/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-9fc1c2f6089633fd/AudioPluginMSASpatializer.so-df36bfa7bcacfa42",
+   "xfrm_size": 287302
+  },
+  {
+   "compression": 8,
+   "hash": "b424dd64b3ad1ad7acb14c28db43720770ff2715",
+   "pkgpath": "bin/LuminMediaPlayer.dll",
+   "size": 68608,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/LuminMediaPlayer.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "d49559f0f4c28e7922c0f2ce24e82643c7a0f83b",
+   "pkgpath": "bin/LuminUnity.dll",
+   "size": 327680,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/LuminUnity.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "51f119b9d8bb1803df4f0e0ead2656f6fbba374b",
+   "pkgpath": "bin/MSA.Runtime.dll",
+   "size": 22528,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/MSA.Runtime.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "a71acc50817a0929bccc93cbe7619d57d25d1b17",
+   "pkgpath": "bin/UnityMagicLeap.so",
+   "size": 3077192,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/UnityMagicLeap.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/maxomdal/Vuforia_demo/max-vuforiatracking.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "64bf876a960651e7dd19762f47a3ec0fbcd363f3",
+   "xfrm_path": "/Users/maxomdal/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-9fc1c2f6089633fd/UnityMagicLeap.so-df36bfa7bcacfa42",
+   "xfrm_size": 3077950
+  },
+  {
+   "compression": 8,
+   "hash": "6f121e919c3408c59042231bbc76b63639a506f3",
+   "pkgpath": "bin/Vuforia.UnityExtensions.dll",
+   "size": 280064,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/Vuforia.UnityExtensions.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "115e9b1167630d128f3b00093c4a6d008f982155",
+   "pkgpath": "bin/libVuforia.so",
+   "size": 30511224,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/libVuforia.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/maxomdal/Vuforia_demo/max-vuforiatracking.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "73e872dee9be3fc86372dcabbee09155d9fb9962",
+   "xfrm_path": "/Users/maxomdal/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-9fc1c2f6089633fd/libVuforia.so-df36bfa7bcacfa42",
+   "xfrm_size": 30511982
+  },
+  {
+   "compression": 8,
+   "hash": "fa042b21a0f56ceec29a07972d25bbd2a10e7f92",
+   "pkgpath": "bin/libVuforiaWrapper.so",
+   "size": 116696,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/libVuforiaWrapper.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/maxomdal/Vuforia_demo/max-vuforiatracking.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "20e3af405198afb3e4fc7fe591327158d2605e2a",
+   "xfrm_path": "/Users/maxomdal/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-9fc1c2f6089633fd/libVuforiaWrapper.so-df36bfa7bcacfa42",
+   "xfrm_size": 117454
+  },
+  {
+   "compression": 8,
+   "hash": "a86c27fcbaa2b90e59a995a472f69b8736524c2e",
+   "pkgpath": "bin/libml_camera_plugin.so",
+   "size": 14184,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/libml_camera_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/maxomdal/Vuforia_demo/max-vuforiatracking.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "67c1b95f5e2658742efcc9f7cf51c90ae6a7f3a5",
+   "xfrm_path": "/Users/maxomdal/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-9fc1c2f6089633fd/libml_camera_plugin.so-df36bfa7bcacfa42",
+   "xfrm_size": 14942
+  },
+  {
+   "compression": 8,
+   "hash": "1d1daf0c329d1182bee0bcc2986e0368b2227511",
+   "pkgpath": "bin/libml_mediaplayer_plugin.so",
+   "size": 72064,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/libml_mediaplayer_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/maxomdal/Vuforia_demo/max-vuforiatracking.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "ad1195860f98259d053d1ef231648e10a4f2d19b",
+   "xfrm_path": "/Users/maxomdal/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-9fc1c2f6089633fd/libml_mediaplayer_plugin.so-df36bfa7bcacfa42",
+   "xfrm_size": 72822
+  },
+  {
+   "compression": 8,
+   "hash": "984e4d2049ed5491b970ba15d1e8c8cadac0896e",
+   "pkgpath": "bin/nunit.framework.dll",
+   "size": 339968,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/nunit.framework.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "e6124da6073b916e29e013cf3ae3f58a4c5fdb0e",
+   "pkgpath": "Data/Resources/mscorlib.dll-resources.dat",
+   "size": 337563,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Resources/mscorlib.dll-resources.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "fa10859a933989c5961257c02d9f4fcf042044f1",
+   "pkgpath": "Data/Resources/unity default resources",
+   "size": 3689324,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Resources/unity default resources"
+  },
+  {
+   "compression": 8,
+   "hash": "b38006a5afeaf9ca7513030f21ba636b4644a71d",
+   "pkgpath": "Data/Resources/unity_builtin_extra",
+   "size": 783052,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Resources/unity_builtin_extra"
+  },
+  {
+   "compression": 8,
+   "hash": "2578c437418bb8f7399d89ef038273247e2b75e5",
+   "pkgpath": "Data/StreamingAssets/Vuforia/bathymmetry-tracker-2.dat",
+   "size": 192066,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/StreamingAssets/Vuforia/bathymmetry-tracker-2.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "a0f82758d273546b63b09f7e072016f9064e57ca",
+   "pkgpath": "Data/StreamingAssets/Vuforia/bathymmetry-tracker-2.xml",
+   "size": 556,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/StreamingAssets/Vuforia/bathymmetry-tracker-2.xml"
+  },
+  {
+   "compression": 8,
+   "hash": "18003355e1091220acddcf1e3e28c993051a7d48",
+   "pkgpath": "Data/StreamingAssets/Vuforia/bathymmetry-tracker.dat",
+   "size": 881733,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/StreamingAssets/Vuforia/bathymmetry-tracker.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "da5b9a7a75e412ca1856f0234d4bbbbf3c6f562f",
+   "pkgpath": "Data/StreamingAssets/Vuforia/bathymmetry-tracker.xml",
+   "size": 461,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/StreamingAssets/Vuforia/bathymmetry-tracker.xml"
+  },
+  {
+   "compression": 8,
+   "hash": "4a8c5538f6f73cd04d82cb9a44c30d7d4433c4ff",
+   "pkgpath": "Data/StreamingAssets/Vuforia/qr-code-tracking.dat",
+   "size": 1001893,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/StreamingAssets/Vuforia/qr-code-tracking.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "4f33a4f54bd325b80cc1d9ed94c97dc0a6959450",
+   "pkgpath": "Data/StreamingAssets/Vuforia/qr-code-tracking.xml",
+   "size": 614,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/StreamingAssets/Vuforia/qr-code-tracking.xml"
+  },
+  {
+   "compression": 8,
+   "hash": "778891100a8030ad6096db64784c6e5d67c28378",
+   "pkgpath": "Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json",
+   "size": 417,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json"
+  },
+  {
+   "compression": 8,
+   "hash": "f226dfc0f1097b18c77eb2198b6257be5b02a613",
+   "pkgpath": "Data/boot.config",
+   "size": 123,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/boot.config"
+  },
+  {
+   "compression": 8,
+   "hash": "c98dcc6dba5d5ea4de1dce8384588337630e7f26",
+   "pkgpath": "Data/globalgamemanagers",
+   "size": 65176,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/globalgamemanagers"
+  },
+  {
+   "compression": 8,
+   "hash": "b001e897945aaf8c68a6c74f27f655808477f3d9",
+   "pkgpath": "Data/globalgamemanagers.assets",
+   "size": 111044,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/globalgamemanagers.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "b7971021c9eb01fe555e1f12877342b19ff9da9e",
+   "pkgpath": "Data/level0",
+   "size": 26796,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/level0"
+  },
+  {
+   "compression": 8,
+   "hash": "20b7c5abf176473035ffc6aa28cc9645d2f3e802",
+   "pkgpath": "Data/resources.assets",
+   "size": 558464,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/resources.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "1d5e5447a0f0b085b695376c9fdb7738e07e4f23",
+   "pkgpath": "Data/resources.assets.resS",
+   "size": 360480,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/resources.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "72df8187e8b57e64fb93926431a0053987da4917",
+   "pkgpath": "Data/resources.resource",
+   "size": 5875136,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/resources.resource"
+  },
+  {
+   "compression": 8,
+   "hash": "5a3e88aa9bcd20459fe608e4551d43d91efb23a7",
+   "pkgpath": "Data/sharedassets0.assets",
+   "size": 21025312,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/sharedassets0.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "f3d29d277b41e1032a2831950fbea6168e9b2a32",
+   "pkgpath": "Data/sharedassets0.assets.resS",
+   "size": 43485688,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/sharedassets0.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "61d3d50aa3472ee134e4c14f0f43bcbdc0215e33",
+   "pkgpath": "bin/Player.elf",
+   "size": 20710840,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Player.elf",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/maxomdal/Vuforia_demo/max-vuforiatracking.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "a5483c2556749d8bac0e1cc4e2b8fe42633483b7",
+   "xfrm_path": "/Users/maxomdal/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-9fc1c2f6089633fd/Player.elf-35066aa651059559",
+   "xfrm_size": 20711598
+  },
+  {
+   "compression": 8,
+   "hash": "fa24fd2bc9e2c3ee7e3ea710b7b533122ad46086",
+   "pkgpath": "manifest.xml",
+   "size": 4090,
+   "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/manifest.xml",
+   "xfrm_flags": {
+    "manifest": {
+     "cert_hash": "1709caaca95ff5a9588076cd8680808f06e6aebf",
+     "developer_id": "8d64906b-0edb-41cc-96ec-81fab26d98b4"
+    }
+   },
+   "xfrm_hash": "b7f541e3dc34c3128a927843bed9f0a68cc1c08c",
+   "xfrm_path": "/Users/maxomdal/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-9fc1c2f6089633fd/manifest.xml-35066aa651059559",
+   "xfrm_size": 1508
+  }
+ ],
+ "pkgflags": {
+  "signed": {
+   "cert": "/Users/maxomdal/Vuforia_demo/max-vuforiatracking.cert"
+  },
+  "taildata": {
+   "debuggable": true,
+   "devcert": "/Users/maxomdal/Vuforia_demo/max-vuforiatracking.cert",
+   "sbox": "USER",
+   "version": 3
+  }
+ }
+}

@@ -1,0 +1,58 @@
+[
+ {
+  "dest": "bin/libc++_shared.so",
+  "src": "/Users/maxomdal/MagicLeap/mlsdk/v0.23.0/lumin/stl/libc++/lib/libc++_shared.so"
+ },
+ {
+  "dest": "bin/libil2cpp.so",
+  "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Native/libil2cpp.so"
+ },
+ {
+  "dest": "bin/AudioPluginMSASpatializer.so",
+  "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/AudioPluginMSASpatializer.so"
+ },
+ {
+  "dest": "bin/LuminMediaPlayer.dll",
+  "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/LuminMediaPlayer.dll"
+ },
+ {
+  "dest": "bin/LuminUnity.dll",
+  "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/LuminUnity.dll"
+ },
+ {
+  "dest": "bin/MSA.Runtime.dll",
+  "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/MSA.Runtime.dll"
+ },
+ {
+  "dest": "bin/UnityMagicLeap.so",
+  "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/UnityMagicLeap.so"
+ },
+ {
+  "dest": "bin/Vuforia.UnityExtensions.dll",
+  "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/Vuforia.UnityExtensions.dll"
+ },
+ {
+  "dest": "bin/libVuforia.so",
+  "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/libVuforia.so"
+ },
+ {
+  "dest": "bin/libVuforiaWrapper.so",
+  "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/libVuforiaWrapper.so"
+ },
+ {
+  "dest": "bin/libml_camera_plugin.so",
+  "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/libml_camera_plugin.so"
+ },
+ {
+  "dest": "bin/libml_mediaplayer_plugin.so",
+  "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/libml_mediaplayer_plugin.so"
+ },
+ {
+  "dest": "bin/nunit.framework.dll",
+  "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Plugins/nunit.framework.dll"
+ },
+ {
+  "dest": "bin/Player.elf",
+  "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Player.elf"
+ }
+]
