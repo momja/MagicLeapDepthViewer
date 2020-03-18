@@ -5,10 +5,13 @@ using UnityEngine;
 public class ModelCenter : MonoBehaviour
 {
     Vector3 originalScale;
+
+    private GameObject _MODELOFFSET;
     // Start is called before the first frame update
     void Start()
     {
-        originalScale = gameObject.transform.localScale;        
+        _MODELOFFSET = GameObject.Find("MODELOFFSET");
+        originalScale = gameObject.transform.localScale;
     }
 
     // Update is called once per frame
@@ -18,13 +21,15 @@ public class ModelCenter : MonoBehaviour
         Vector3 avgLookAtRotation = Vector3.zero;
         Vector3 avgLookUpRotation = Vector3.zero;
         int enabledTrackerCount = 0;
-        for (int i = 0; i < TrackerObject.trackerObjects.Length; i++) {
+        for (int i = 0; i < TrackerObject.trackerObjects.Count; i++) {
             TrackerObject trackerObj = TrackerObject.trackerObjects[i];
             if (trackerObj.visible) {
-                print($"Tracking {trackerObj.posIdentifier}");
                 avgCenter += trackerObj.modelCenterApprox;
-                avgLookAtRotation += trackerObj.transform.up;
-                avgLookUpRotation += trackerObj.transform.forward;
+                Quaternion upOrientedQuat = 
+                    trackerObj.transform.rotation * Quaternion.Inverse(trackerObj.imageRotation);
+                print(Quaternion.Inverse(trackerObj.imageRotation).eulerAngles);
+                avgLookAtRotation += upOrientedQuat * Vector3.up;
+                avgLookUpRotation += upOrientedQuat * Vector3.forward;
                 enabledTrackerCount += 1;
             }
         }
@@ -35,7 +40,7 @@ public class ModelCenter : MonoBehaviour
         gameObject.transform.localScale = originalScale;
         avgCenter = avgCenter/enabledTrackerCount;
         avgLookAtRotation = avgLookAtRotation/enabledTrackerCount;
-        gameObject.transform.localPosition = avgCenter;
-        gameObject.transform.rotation = Quaternion.LookRotation(avgLookUpRotation, avgLookAtRotation);
+        _MODELOFFSET.transform.rotation = Quaternion.LookRotation(avgLookUpRotation, avgLookAtRotation);
+        gameObject.transform.position = avgCenter;
     }
 }

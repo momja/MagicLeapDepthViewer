@@ -22,16 +22,16 @@
   },
   {
    "compression": 8,
-   "hash": "9d7d2295b576921ce25b09be7c95554f4b11a0d7",
+   "hash": "6fc3165f4a9f60a661957a3f420ef1a5ee8162be",
    "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
-   "size": 3501796,
+   "size": 3502488,
    "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
   },
   {
    "compression": 8,
-   "hash": "56e1b98232a939b277a187df0d95ab327a62bfe8",
+   "hash": "f188cc75e00d82a7522a80f87fb9c27786e2005c",
    "pkgpath": "bin/libil2cpp.so",
-   "size": 54069984,
+   "size": 54084624,
    "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/Native/libil2cpp.so",
    "xfrm_flags": {
     "signed": {
@@ -43,9 +43,9 @@
      "version": 3
     }
    },
-   "xfrm_hash": "5b2ab76f15a4ad608632d68bfccce941ce54f02e",
+   "xfrm_hash": "9533e82028ce7e7c7f995be6ef860de5da3a6bd2",
    "xfrm_path": "/Users/maxomdal/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-9fc1c2f6089633fd/libil2cpp.so-2cbd052dc596dcc6",
-   "xfrm_size": 54070742
+   "xfrm_size": 54085382
   },
   {
    "compression": 8,
@@ -281,30 +281,30 @@
   },
   {
    "compression": 8,
-   "hash": "c98dcc6dba5d5ea4de1dce8384588337630e7f26",
+   "hash": "194d60351a741c9934528ef75e45b78b771aa0c3",
    "pkgpath": "Data/globalgamemanagers",
-   "size": 65176,
+   "size": 65208,
    "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/globalgamemanagers"
   },
   {
    "compression": 8,
-   "hash": "b001e897945aaf8c68a6c74f27f655808477f3d9",
+   "hash": "808851ba6e490d20698fe5ac8dee9c97f6a4ce92",
    "pkgpath": "Data/globalgamemanagers.assets",
-   "size": 111044,
+   "size": 111140,
    "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/globalgamemanagers.assets"
   },
   {
    "compression": 8,
-   "hash": "b7971021c9eb01fe555e1f12877342b19ff9da9e",
+   "hash": "d0a736fb2b12e7a4f93f18437fd77a3604708e94",
    "pkgpath": "Data/level0",
-   "size": 26796,
+   "size": 28356,
    "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/level0"
   },
   {
    "compression": 8,
-   "hash": "20b7c5abf176473035ffc6aa28cc9645d2f3e802",
+   "hash": "e6a0f41257e172d81780778c9de7b0202d415234",
    "pkgpath": "Data/resources.assets",
-   "size": 558464,
+   "size": 558456,
    "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/resources.assets"
   },
   {
@@ -323,16 +323,16 @@
   },
   {
    "compression": 8,
-   "hash": "5a3e88aa9bcd20459fe608e4551d43d91efb23a7",
+   "hash": "e3568f6675d84d639685fe5fd76a2329c818a26e",
    "pkgpath": "Data/sharedassets0.assets",
-   "size": 21025312,
+   "size": 20871524,
    "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/sharedassets0.assets"
   },
   {
    "compression": 8,
-   "hash": "f3d29d277b41e1032a2831950fbea6168e9b2a32",
+   "hash": "65499bd5dd1a5fee42da40964f8fb8fe1ea9416d",
    "pkgpath": "Data/sharedassets0.assets.resS",
-   "size": 43485688,
+   "size": 34083312,
    "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/sharedassets0.assets.resS"
   },
   {
