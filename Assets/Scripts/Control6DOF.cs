@@ -21,11 +21,11 @@ public class Control6DOF : MonoBehaviour {
     void Update () {
         if (_controller.IsBumperDown)
         {
-            transform.GetChild(0).gameObject.SetActive(false);
+            transform.GetChild(0).gameObject.SetActive(true);
         }
         else
         {
-            transform.GetChild(0).gameObject.SetActive(true);
+            transform.GetChild(0).gameObject.SetActive(false);
         }
         //Attach the Beam GameObject to the Control
         transform.position = _controller.Position;

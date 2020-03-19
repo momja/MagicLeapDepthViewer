@@ -19,10 +19,11 @@ MonoBehaviour:
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 6
     maxSimultaneousObjectTargets: 0
+    virtualSceneScaleFactor: 1
     useDelayedLoadingObjectTargets: 0
     modelTargetRecoWhileExtendedTracked: 1
-    version: 8.6.10
-    eulaAcceptedVersions: '{"Values":["8.5","0.0","8.6"]}'
+    version: 9.0.12
+    eulaAcceptedVersions: '{"Values":["8.5","0.0","8.6","9.0"]}'
     modelTargetMode: 0
   database:
     disableModelExtraction: 0
@@ -32,14 +33,10 @@ MonoBehaviour:
       type: 3}
     videoBackgroundEnabled: 1
   deviceTracker:
-    autoInitTracker: 0
     autoStartTracker: 0
     arcoreRequirement: 1
     autoImportArcore: 0
-  smartTerrain:
-    autoInitTracker: 0
-    autoStartTracker: 0
+  playmode:
+    playModeType: 0
   webcam:
-    deviceNameSetInEditor: USB Camera
-    turnOffWebCam: 0
     renderTextureLayer: 30

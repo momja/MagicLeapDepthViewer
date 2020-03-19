@@ -1,0 +1,26 @@
+{
+    "target_count": 3,
+    "targets": [
+        {
+            "name" : "target1",
+            "filepath" : "targets/target1.png",
+            "size" : [10,10],
+            "relative_position" : [157.05, 190.5, 0.0],
+            "euler_angles": [90.0, 0.0, 0.0]
+        },
+        {
+            "name" : "target2",
+            "filepath" : "targets/target2.png",
+            "size" : [10,10],
+            "relative_position" : [157.05, 190.5, 0.0],
+            "euler_angles": [90.0, 0.0, 0.0]
+        },
+        {
+            "name" : "target3",
+            "filepath" : "targets/target3.png",
+            "size" : [10,10],
+            "relative_position" : [157.05, 190.5, 0.0],
+            "euler_angles": [90.0, 0.0, 0.0]
+        }
+    ]
+}

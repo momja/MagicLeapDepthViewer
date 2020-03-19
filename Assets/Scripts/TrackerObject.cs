@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
+using Vuforia;
+
 public class TrackerObject : MonoBehaviour
 {
     public static List<TrackerObject> trackerObjects = new List<TrackerObject>();
@@ -25,7 +28,7 @@ public class TrackerObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        posIdentifier = trackerObjects.Count;
+        DefaultTrackableEventHandler ev = gameObject.AddComponent<DefaultTrackableEventHandler>();
         trackerObjects.Add(this);
         // transform offset to offset in world space
         originOffset /= transform.localScale.x;
