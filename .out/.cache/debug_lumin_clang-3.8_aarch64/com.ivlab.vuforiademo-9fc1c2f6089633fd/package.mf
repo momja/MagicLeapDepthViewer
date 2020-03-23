@@ -274,16 +274,16 @@
   },
   {
    "compression": 8,
-   "hash": "0e9a83b2d89bfd0e77cb22db7f2dc7176d828981",
+   "hash": "58b0a059f23203f9cdd0cddbf30308ce7dc3004e",
    "pkgpath": "Data/boot.config",
    "size": 249,
    "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/boot.config"
   },
   {
    "compression": 8,
-   "hash": "06ab83871af348e085d4bc8c0d8d4848881b16c8",
+   "hash": "a02e8d003802aa3aeb1bdb50492fe1f43ab8e475",
    "pkgpath": "Data/globalgamemanagers",
-   "size": 65880,
+   "size": 65808,
    "src": "/Users/maxomdal/Vuforia_demo/Temp/StagingArea/Data/globalgamemanagers"
   },
   {
