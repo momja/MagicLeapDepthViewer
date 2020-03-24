@@ -27,7 +27,6 @@ public class ModelCenter : MonoBehaviour
                 avgCenter += trackerObj.modelCenterApprox;
                 Quaternion upOrientedQuat = 
                     trackerObj.transform.rotation * Quaternion.Inverse(trackerObj.imageRotation);
-                print(Quaternion.Inverse(trackerObj.imageRotation).eulerAngles);
                 avgLookAtRotation += upOrientedQuat * Vector3.up;
                 avgLookUpRotation += upOrientedQuat * Vector3.forward;
                 enabledTrackerCount += 1;

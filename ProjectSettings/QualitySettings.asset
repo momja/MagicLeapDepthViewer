@@ -219,3 +219,4 @@ QualitySettings:
   m_PerPlatformDefaultQuality:
     Lumin: 0
     Standalone: 0
+    iPhone: 0
