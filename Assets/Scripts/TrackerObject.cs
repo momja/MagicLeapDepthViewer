@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -10,7 +11,9 @@ public class TrackerObject : MonoBehaviour
     public static List<TrackerObject> trackerObjects = new List<TrackerObject>();
 
     // The offset from the tracker object center to the center of the model
-    public Vector3 originOffset;
+    private Vector3 originOffset;
+
+    private Quaternion originRotationOffset;
     // The rotational offset of the object from the rotation of the model
     public Vector3 rotationEuler;
     // Approximate center of model given the tracker objects position, and its offset. In world space
@@ -31,14 +34,25 @@ public class TrackerObject : MonoBehaviour
         DefaultTrackableEventHandler ev = gameObject.AddComponent<DefaultTrackableEventHandler>();
         trackerObjects.Add(this);
         // transform offset to offset in world space
+        originOffset = transform.position;
         originOffset /= transform.localScale.x;
+        originRotationOffset = transform.rotation;
     }
 
     // Update is called once per frame
     void Update()
     {
         if (visible) {
-            modelCenterApprox = transform.TransformPoint(originOffset);
+            modelCenterApprox = transform.TransformPoint(Quaternion.Inverse(originRotationOffset) * -originOffset);
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (visible)
+        {
+            Quaternion rotat = transform.rotation;
+            Gizmos.DrawRay(transform.position, transform.TransformPoint(-(originOffset)));
         }
     }
 
