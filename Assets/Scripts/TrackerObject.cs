@@ -12,18 +12,11 @@ public class TrackerObject : MonoBehaviour
 
     // The offset from the tracker object center to the center of the model
     private Vector3 originOffset;
-
-    private Quaternion originRotationOffset;
-    // The rotational offset of the object from the rotation of the model
-    public Vector3 rotationEuler;
+    // The rotational offset of the tracker object relative to the model's rotation
+    public Quaternion originRotationOffset;
     // Approximate center of model given the tracker objects position, and its offset. In world space
     public Vector3 modelCenterApprox;
 
-    [HideInInspector]
-    public Quaternion imageRotation
-    {
-        get { return Quaternion.Euler(rotationEuler); }
-    }
     [HideInInspector]
     public int posIdentifier = 0;
     [HideInInspector]
@@ -43,16 +36,20 @@ public class TrackerObject : MonoBehaviour
     void Update()
     {
         if (visible) {
-            modelCenterApprox = transform.TransformPoint(Quaternion.Inverse(originRotationOffset) * -originOffset);
+            modelCenterApprox = transform.TransformPoint(Quaternion.Inverse(originRotationOffset)* -originOffset);
         }
+        print(transform.position);
+        print(originOffset);
     }
 
     private void OnDrawGizmos()
     {
         if (visible)
         {
-            Quaternion rotat = transform.rotation;
-            Gizmos.DrawRay(transform.position, transform.TransformPoint(-(originOffset)));
+            Gizmos.color = Color.blue;
+            Gizmos.DrawRay(transform.position, transform.InverseTransformPoint(modelCenterApprox));
+            Gizmos.color = Color.red;
+            Gizmos.DrawRay(transform.position, transform.position - originOffset);
         }
     }
 

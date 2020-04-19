@@ -1,0 +1,386 @@
+{
+ "entries": [
+  {
+   "compression": 8,
+   "hash": "85fe9f7e9990bae69e4c745b4eb16cf9a66d4745",
+   "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
+   "size": 3605324,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "1334c080ecce686720adee908fc401973fee90c3",
+   "pkgpath": "bin/libil2cpp.so",
+   "size": 55947640,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/Native/libil2cpp.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/max-vuforiatracking.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "41d1cdca5c4a886560b2208cd83b62f0546a9981",
+   "xfrm_path": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-c9fd382b395f90ba/libil2cpp.so-d99445b4e12242d1",
+   "xfrm_size": 55948398
+  },
+  {
+   "compression": 8,
+   "hash": "eb463901d6f69c739181911a175309562ca388ce",
+   "pkgpath": "bin/AudioPluginMSASpatializer.so",
+   "size": 286544,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/Plugins/AudioPluginMSASpatializer.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/max-vuforiatracking.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "d1fc3a7fd8262abe47b3c9bbdd343ef389417df2",
+   "xfrm_path": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-c9fd382b395f90ba/AudioPluginMSASpatializer.so-cb85f7526e870400",
+   "xfrm_size": 287302
+  },
+  {
+   "compression": 8,
+   "hash": "b424dd64b3ad1ad7acb14c28db43720770ff2715",
+   "pkgpath": "bin/LuminMediaPlayer.dll",
+   "size": 68608,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/Plugins/LuminMediaPlayer.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "d49559f0f4c28e7922c0f2ce24e82643c7a0f83b",
+   "pkgpath": "bin/LuminUnity.dll",
+   "size": 327680,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/Plugins/LuminUnity.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "51f119b9d8bb1803df4f0e0ead2656f6fbba374b",
+   "pkgpath": "bin/MSA.Runtime.dll",
+   "size": 22528,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/Plugins/MSA.Runtime.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "a71acc50817a0929bccc93cbe7619d57d25d1b17",
+   "pkgpath": "bin/UnityMagicLeap.so",
+   "size": 3077192,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/Plugins/UnityMagicLeap.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/max-vuforiatracking.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "64bf876a960651e7dd19762f47a3ec0fbcd363f3",
+   "xfrm_path": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-c9fd382b395f90ba/UnityMagicLeap.so-cb85f7526e870400",
+   "xfrm_size": 3077950
+  },
+  {
+   "compression": 8,
+   "hash": "62ac55d4d0bc40ad0625c12fcc1c3c2f586f2796",
+   "pkgpath": "bin/Vuforia.UnityExtensions.dll",
+   "size": 361984,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/Plugins/Vuforia.UnityExtensions.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "e542a0a193fe1d1cc4bbf9ad4268e57da16251c5",
+   "pkgpath": "bin/libVuforia.so",
+   "size": 32811120,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/Plugins/libVuforia.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/max-vuforiatracking.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "b0f390fcad83b1940742edf220159fd9f21b8f05",
+   "xfrm_path": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-c9fd382b395f90ba/libVuforia.so-cb85f7526e870400",
+   "xfrm_size": 32811878
+  },
+  {
+   "compression": 8,
+   "hash": "ed50fdb2ab5810e255890accedfe2df1c3145755",
+   "pkgpath": "bin/libVuforiaWrapper.so",
+   "size": 120792,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/Plugins/libVuforiaWrapper.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/max-vuforiatracking.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "6ec12a3828f97639323132dd03d0482d3782f916",
+   "xfrm_path": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-c9fd382b395f90ba/libVuforiaWrapper.so-cb85f7526e870400",
+   "xfrm_size": 121550
+  },
+  {
+   "compression": 8,
+   "hash": "a86c27fcbaa2b90e59a995a472f69b8736524c2e",
+   "pkgpath": "bin/libml_camera_plugin.so",
+   "size": 14184,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/Plugins/libml_camera_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/max-vuforiatracking.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "67c1b95f5e2658742efcc9f7cf51c90ae6a7f3a5",
+   "xfrm_path": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-c9fd382b395f90ba/libml_camera_plugin.so-cb85f7526e870400",
+   "xfrm_size": 14942
+  },
+  {
+   "compression": 8,
+   "hash": "1d1daf0c329d1182bee0bcc2986e0368b2227511",
+   "pkgpath": "bin/libml_mediaplayer_plugin.so",
+   "size": 72064,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/Plugins/libml_mediaplayer_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/max-vuforiatracking.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "ad1195860f98259d053d1ef231648e10a4f2d19b",
+   "xfrm_path": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-c9fd382b395f90ba/libml_mediaplayer_plugin.so-cb85f7526e870400",
+   "xfrm_size": 72822
+  },
+  {
+   "compression": 8,
+   "hash": "984e4d2049ed5491b970ba15d1e8c8cadac0896e",
+   "pkgpath": "bin/nunit.framework.dll",
+   "size": 339968,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/Plugins/nunit.framework.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "e6124da6073b916e29e013cf3ae3f58a4c5fdb0e",
+   "pkgpath": "Data/Resources/mscorlib.dll-resources.dat",
+   "size": 337563,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/Resources/mscorlib.dll-resources.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "fa10859a933989c5961257c02d9f4fcf042044f1",
+   "pkgpath": "Data/Resources/unity default resources",
+   "size": 3689324,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/Resources/unity default resources"
+  },
+  {
+   "compression": 8,
+   "hash": "b38006a5afeaf9ca7513030f21ba636b4644a71d",
+   "pkgpath": "Data/Resources/unity_builtin_extra",
+   "size": 783052,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/Resources/unity_builtin_extra"
+  },
+  {
+   "compression": 8,
+   "hash": "2578c437418bb8f7399d89ef038273247e2b75e5",
+   "pkgpath": "Data/StreamingAssets/Vuforia/bathymmetry-tracker-2.dat",
+   "size": 192066,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/StreamingAssets/Vuforia/bathymmetry-tracker-2.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "a0f82758d273546b63b09f7e072016f9064e57ca",
+   "pkgpath": "Data/StreamingAssets/Vuforia/bathymmetry-tracker-2.xml",
+   "size": 556,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/StreamingAssets/Vuforia/bathymmetry-tracker-2.xml"
+  },
+  {
+   "compression": 8,
+   "hash": "18003355e1091220acddcf1e3e28c993051a7d48",
+   "pkgpath": "Data/StreamingAssets/Vuforia/bathymmetry-tracker.dat",
+   "size": 881733,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/StreamingAssets/Vuforia/bathymmetry-tracker.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "da5b9a7a75e412ca1856f0234d4bbbbf3c6f562f",
+   "pkgpath": "Data/StreamingAssets/Vuforia/bathymmetry-tracker.xml",
+   "size": 461,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/StreamingAssets/Vuforia/bathymmetry-tracker.xml"
+  },
+  {
+   "compression": 8,
+   "hash": "4a8c5538f6f73cd04d82cb9a44c30d7d4433c4ff",
+   "pkgpath": "Data/StreamingAssets/Vuforia/qr-code-tracking.dat",
+   "size": 1001893,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/StreamingAssets/Vuforia/qr-code-tracking.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "4f33a4f54bd325b80cc1d9ed94c97dc0a6959450",
+   "pkgpath": "Data/StreamingAssets/Vuforia/qr-code-tracking.xml",
+   "size": 614,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/StreamingAssets/Vuforia/qr-code-tracking.xml"
+  },
+  {
+   "compression": 8,
+   "hash": "778891100a8030ad6096db64784c6e5d67c28378",
+   "pkgpath": "Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json",
+   "size": 417,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json"
+  },
+  {
+   "compression": 8,
+   "hash": "df4f2d400fcc568efa1f3f807ac60bafe982ac89",
+   "pkgpath": "Data/boot.config",
+   "size": 248,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/boot.config"
+  },
+  {
+   "compression": 8,
+   "hash": "b1e96a0fc4f79960c96b6081bd213d569f0f2372",
+   "pkgpath": "Data/globalgamemanagers",
+   "size": 65816,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/globalgamemanagers"
+  },
+  {
+   "compression": 8,
+   "hash": "a3339b956ae7793b2d8b9eb95af751feeff4ac32",
+   "pkgpath": "Data/globalgamemanagers.assets",
+   "size": 115700,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/globalgamemanagers.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "ebe09bca1aa9cc8f372beffd894e2106e18c8b43",
+   "pkgpath": "Data/level0",
+   "size": 26836,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/level0"
+  },
+  {
+   "compression": 8,
+   "hash": "7d972769af9b0a3fb5bc6d5333ba93f85fa1ce92",
+   "pkgpath": "Data/resources.assets",
+   "size": 558440,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/resources.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "1d5e5447a0f0b085b695376c9fdb7738e07e4f23",
+   "pkgpath": "Data/resources.assets.resS",
+   "size": 360480,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/resources.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "72df8187e8b57e64fb93926431a0053987da4917",
+   "pkgpath": "Data/resources.resource",
+   "size": 5875136,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/resources.resource"
+  },
+  {
+   "compression": 8,
+   "hash": "94904219a8b4e9f56a1fd73474cb91a68f7882ea",
+   "pkgpath": "Data/sharedassets0.assets",
+   "size": 23742940,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/sharedassets0.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "9a41c683d3eb1725109e25530c801be9414e324f",
+   "pkgpath": "Data/sharedassets0.assets.resS",
+   "size": 31986160,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Data/sharedassets0.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "3792c8146ec970ba59ddca67d71f7f251cd11591",
+   "pkgpath": "bin/Player.elf",
+   "size": 49535528,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/Player.elf",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/max-vuforiatracking.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "ccfc0b57194aa2b624cc058a11911fb6b7c8748b",
+   "xfrm_path": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-c9fd382b395f90ba/Player.elf-ccb8123235eef4ba",
+   "xfrm_size": 49536286
+  },
+  {
+   "compression": 8,
+   "hash": "fa24fd2bc9e2c3ee7e3ea710b7b533122ad46086",
+   "pkgpath": "manifest.xml",
+   "size": 4090,
+   "src": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/Temp/StagingArea/manifest.xml",
+   "xfrm_flags": {
+    "manifest": {
+     "cert_hash": "1709caaca95ff5a9588076cd8680808f06e6aebf",
+     "developer_id": "8d64906b-0edb-41cc-96ec-81fab26d98b4"
+    }
+   },
+   "xfrm_hash": "b7f541e3dc34c3128a927843bed9f0a68cc1c08c",
+   "xfrm_path": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-c9fd382b395f90ba/manifest.xml-ccb8123235eef4ba",
+   "xfrm_size": 1508
+  },
+  {
+   "compression": 8,
+   "hash": "5925de9f4d7b83c65d1fd7b25ced5f0bf8c27e73",
+   "pkgpath": "bin/libc++_shared.so",
+   "size": 976832,
+   "src": "/Users/maxomdal/MagicLeap/mlsdk/v0.24.1/lumin/stl/libc++/lib/libc++_shared.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/max-vuforiatracking.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "07e1ec9bb3d68e3a1f74cf19ab9259317fa63c39",
+   "xfrm_path": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ivlab.vuforiademo-c9fd382b395f90ba/libc++_shared.so-b0963959c9d50f30",
+   "xfrm_size": 977590
+  }
+ ],
+ "pkgflags": {
+  "signed": {
+   "cert": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/max-vuforiatracking.cert"
+  },
+  "taildata": {
+   "debuggable": true,
+   "devcert": "/Users/maxomdal/Documents/College/SEM_6/Sculpting_Vis/Vuforia_demo/max-vuforiatracking.cert",
+   "sbox": "USER",
+   "version": 3
+  }
+ }
+}
