@@ -12,5 +12,7 @@ EditorBuildSettings:
     path: Assets/test_vuforia_magicleap_oneobject.unity
     guid: 36b7dbcb790eb47b9b6aa565cf13887b
   m_configObjects:
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: a422e20700a664da2ba229ca373c933a,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 676afd4b6bc91174cb6fd9542f0ea81a,
       type: 2}

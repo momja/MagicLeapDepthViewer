@@ -28,7 +28,7 @@ MonoBehaviour:
   database:
     disableModelExtraction: 0
   videoBackground:
-    numDivisions: 2
+    numDivisions: 4
     videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
       type: 3}
     videoBackgroundEnabled: 1

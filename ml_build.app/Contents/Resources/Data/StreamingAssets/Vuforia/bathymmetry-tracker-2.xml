@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="Left" size="0.260000 0.053198" />
+    <ImageTarget name="Right" size="0.260000 0.053198" />
+    <ImageTarget name="Top" size="0.257000 0.024541" />
+    <ImageTarget name="Bottom" size="0.257000 0.024541" />
+    <ImageTarget name="test_image_2" size="0.385000 0.275695" />
+    <ImageTarget name="small_pebbles" size="0.385000 0.275695" />
+  </Tracking>
+</QCARConfig>
