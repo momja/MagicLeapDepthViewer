@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using UnityEngine;
 
 public class ModelCenter : MonoBehaviour
@@ -30,8 +32,6 @@ public class ModelCenter : MonoBehaviour
                     trackerObj.transform.rotation * Quaternion.Inverse(trackerObj.originRotationOffset);
                 avgLookAtRotation += upOrientedQuat * Vector3.up;
                 avgLookUpRotation += upOrientedQuat * Vector3.forward;
-                print(trackerObj.modelCenterApprox);
-                print(avgCenter);
                 enabledTrackerCount += 1;
             }
         }
@@ -41,15 +41,27 @@ public class ModelCenter : MonoBehaviour
             gameObject.transform.localScale = new Vector3(0,0,0);
             return;
         }
-        // Blur movement over last 15 frames to ease moving slightly
-        if (previousCoords.Count > 15) {
+        // ease movement over last n frames to ease moving slightly
+        if (previousCoords.Count >= 10) {
             previousCoords.RemoveAt(0);
         }
         previousCoords.Add(avgCenter);
+
+        // Calculate eased movement
+        Vector3 interpolatedCenter = Vector3.zero;
+        float totalWeights = 0;
+        for (int i = 0; i < previousCoords.Count; i++) {
+            Vector3 coordinate = previousCoords[i];
+            float weight = i / previousCoords.Count;
+            totalWeights += weight;
+            interpolatedCenter += coordinate;
+        }
+        interpolatedCenter = interpolatedCenter / (previousCoords.Count);
         
         gameObject.transform.localScale = originalScale;
         avgLookAtRotation = avgLookAtRotation/enabledTrackerCount;
         _MODELOFFSET.transform.rotation = Quaternion.LookRotation(avgLookUpRotation, avgLookAtRotation);
-        gameObject.transform.position = avgCenter;
+        gameObject.transform.position = interpolatedCenter;
     }
+
 }

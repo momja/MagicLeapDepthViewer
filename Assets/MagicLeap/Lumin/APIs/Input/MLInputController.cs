@@ -12,7 +12,7 @@
 
 namespace UnityEngine.XR.MagicLeap
 {
-    // using UnityEngine.XR.InteractionSubsystems;
+    using UnityEngine.XR.InteractionSubsystems;
 
     #if PLATFORM_LUMIN
 

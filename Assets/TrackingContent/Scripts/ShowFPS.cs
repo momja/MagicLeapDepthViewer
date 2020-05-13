@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,6 +12,6 @@ public Text fpsText;
      void Update () {
          deltaTime += (Time.deltaTime - deltaTime) * 0.1f;
          float fps = 1.0f / deltaTime;
-         fpsText.text = Mathf.Ceil (fps).ToString ();
+         fpsText.text = String.Format("{0} fps", Mathf.Ceil (fps).ToString ());
      }
 }

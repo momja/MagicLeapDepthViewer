@@ -38,8 +38,6 @@ public class TrackerObject : MonoBehaviour
         if (visible) {
             modelCenterApprox = transform.TransformPoint(Quaternion.Inverse(originRotationOffset)* -originOffset);
         }
-        print(transform.position);
-        print(originOffset);
     }
 
     private void OnDrawGizmos()
