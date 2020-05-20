@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8617325702302603196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8617325702302603194}
+  - component: {fileID: 8617325702302603195}
+  - component: {fileID: 4229623172573775564}
+  m_Layer: 0
+  m_Name: Remote Render Client
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8617325702302603194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8617325702302603196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8617325702302603195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8617325702302603196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c051959d9326f46a014319ed588ca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  port: 8052
+  ipAddress: localhost
+  widthOverride: -1
+  widthMultiplier: 1
+  heightOverride: -1
+  heightMultiplier: 1
+  nearPlaneOverride: -1
+  farPlaneOverride: -1
+  FOVOverride: -1
+  FOVMultiplier: 1
+  gridDimension: 128
+  gridDepthThreshold: 7
+  maxDepth: 254
+  compressImage: 1
+  AutoRequestNextFrame: 1
+  displacementMaterial: {fileID: 2100000, guid: b3adb16b2b25b5d49adc527ccfb4a15b,
+    type: 2}
+  views:
+  - name: Left
+    enabled: 1
+    millisecondDelay: 0
+    camera: {fileID: 0}
+    cameraTransform: {fileID: 0}
+    layers: []
+    timingOutput: {fileID: 0}
+  - name: Right
+    enabled: 1
+    millisecondDelay: 0
+    camera: {fileID: 0}
+    cameraTransform: {fileID: 0}
+    layers: []
+    timingOutput: {fileID: 0}
+--- !u!114 &4229623172573775564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8617325702302603196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d4cd069acf6e3140b07d5ad7f85c0a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  address: localhost
+  port: 8053
+  color: {r: 0, g: 0, b: 0, a: 0}
+  annotationSource: {fileID: 0}
+  annotationAvatarPrefab: {fileID: 4357706788425521266, guid: 4684d3904f1f2284983dd711367004ea,
+    type: 3}
+  annotationActive: 1

@@ -1,0 +1,3 @@
+[submodule "IVLab-Unity-Utilities"]
+	path = IVLab-Unity-Utilities
+	url = https://github.umn.edu/ivlab-cs/IVLab-Unity-Utilities.git
