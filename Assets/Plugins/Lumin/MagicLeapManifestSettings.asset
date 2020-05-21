@@ -44,7 +44,7 @@ MonoBehaviour:
       m_Enabled: 0
       m_Name: ConnectionAccess
     - m_ApiLevel: 1
-      m_Enabled: 0
+      m_Enabled: 1
       m_Name: ControllerPose
     - m_ApiLevel: 7
       m_Enabled: 0
@@ -71,7 +71,7 @@ MonoBehaviour:
       m_Enabled: 0
       m_Name: Internet
     - m_ApiLevel: 1
-      m_Enabled: 0
+      m_Enabled: 1
       m_Name: LowLatencyLightwear
     - m_ApiLevel: 1
       m_Enabled: 0

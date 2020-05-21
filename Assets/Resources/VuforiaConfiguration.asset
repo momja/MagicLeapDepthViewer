@@ -31,12 +31,12 @@ MonoBehaviour:
     numDivisions: 2
     videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
       type: 3}
-    videoBackgroundEnabled: 0
+    videoBackgroundEnabled: 1
   deviceTracker:
     autoStartTracker: 1
     arcoreRequirement: 1
     autoImportArcore: 0
   playmode:
-    playModeType: 1
+    playModeType: 0
   webcam:
     renderTextureLayer: 30

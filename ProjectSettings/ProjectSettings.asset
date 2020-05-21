@@ -677,7 +677,7 @@ PlayerSettings:
     m_ModelFolderPath: 
     m_PortalFolderPath: 
   luminCert:
-    m_CertPath: C:/Users/mjomd/Desktop/ABR_VuforiaDemo/max-vuforiatracking.cert
+    m_CertPath: C:/Users/Max Omdal/Documents/SculptingVis/MagicLeapDepthViewer/max-vuforiatracking.cert
     m_SignPackage: 1
   luminIsChannelApp: 0
   luminVersion:
