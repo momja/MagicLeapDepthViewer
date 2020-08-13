@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: AdtZ4yH/////AAABmXpvMFvhAkU5liYAOlPlXdAwkrcBjX4tht1s5hHaJQ6zVsO0iG0pm3oyDcZ9/r6+UEDVDGijfyN+FmKbnG4BYuqqvXXo/SOQqKnWFDBc5oCZtGLm9UBxGnZCTbuyEbqJDTMeqpVBclk6YkaHr8Imfm7l0uhOoUh+6W77/QjIwvaPdPma5Rt38ziyABp7xq2Pcx8YejdruVCYSn3ED1BWwxPv+ZXzPGbZots9uA9X/3LyTwHuEteG/hhl4FASUNYq/vPVY77q4Ah/LUkRCUFbWJhVI2Yk0WWIWNtgWgPYw9KqCNVFiYjrpo19+O5jzAgs5dUgm4PSPKpMHawwCaRJZsV8F7qzdGMuBJ4rbwGHC1P7
-    ufoLicenseKey: QVM0cXlyei8vLy8vQUFBQUtJWTc5OGFBNDBQVHN4SStibWFCN3ZrbGwrSjVJKzBiWWZhSjNzVU1uaDA1VjdZVEcra2RaUlRKQjdYVkU2TkduUmNjbHo5VHZDYStRQ2g1R1A0YmlMbmhjd21SQlYxWCtUUG4wbC9NRTAxWVhLcGdDcmlkZHdRQkk2MWIrZFR0WU55b3l3YkpWQ3NpZlB1cTlQWXh4cnYwQ1I5TXhlY0hDY0xCZnpaWnZXRCt4L0ZGSWdjZ1E4SlBEbEFBWUh3ZFk2Q20wcnY4K1I3cU9TQ01lTVp4NmxPRlB1eVJsS2ZRMUY0L01HRFlBaGVyWkhSQjBGK050VmdYZ2dxRzVERWV2Z0VOL3RFQkY3QlFUU3M1aG96amZXekpjNU1MZXdBZ0Q5aUhxV2ZnV1VOSVU5RGRxWUJaR3RPNk9raGdKbGNueDV6WXdzaytrUzFpeU1FYXFFaUtLL3p6WDdKemNCd3RtdGE2MlE2N2VScFI=
-    delayedInitialization: 0
+    ufoLicenseKey: QVZWbVNsVC8vLy8vQUFBQUtLelB4UjJKODBWSHFZb1NmY2lidTgwRXZMWFhTNGQ3Zzk1ZS8wNjRyd01Wcjh1dnF3ekVzTm1IQVNsMXh1VGw0eFM0VHFhWEw2WjdybjFzWSs5VU1qci9QVi8rM3ErOWdsRmo5d0dXcmNqY1MyNlZSbGxvYzB6V2FCdnVsWWJCcVdzUms5cStzRFJleFYvU2ltdGhuYkNPRkxtSDk2TWR5bk95Q3hveTBYOTNsZkxXWFZlcHF6NWN3RFZTUDdmNGoyNWdQc056TnJvQ2xYSWVsb3YxbHRUV0wwbEhKR0RBN3B4R3BtOFN1LzVrSW1vSDFValAzbE4xUGpCYVNvdkJpQTdYam9GSzBaZTBVbHA3dGFFRllSaWNPaUNLNVExQU9YMHpiQVpZdVNvY0h2ZWpGd1BsYU1SMWFWbXV1SzAwSDNzWCsxdlR6WkZCdVpkbHU5Z1JIVm9JUy9UcW5idytqQldjV2xzbFBnN2c=
+    delayedInitialization: 1
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 6
-    maxSimultaneousObjectTargets: 0
+    maxSimultaneousImageTargets: 4
+    maxSimultaneousObjectTargets: 1
     virtualSceneScaleFactor: 1
     useDelayedLoadingObjectTargets: 0
     modelTargetRecoWhileExtendedTracked: 1
-    version: 9.1.7
-    eulaAcceptedVersions: '{"Values":["8.5","0.0","8.6","9.0","9.1"]}'
+    version: 9.3.3
+    eulaAcceptedVersions: '{"Values":["8.5","0.0","8.6","9.0","9.1","9.2","9.3"]}'
     modelTargetMode: 0
   database:
     disableModelExtraction: 0
@@ -31,11 +31,12 @@ MonoBehaviour:
     numDivisions: 2
     videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
       type: 3}
+    unlitShader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
     videoBackgroundEnabled: 1
   deviceTracker:
     autoStartTracker: 1
     arcoreRequirement: 1
-    autoImportArcore: 0
+    autoImportArcore: 1
   playmode:
     playModeType: 0
   webcam:
