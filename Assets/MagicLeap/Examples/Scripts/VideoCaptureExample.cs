@@ -320,7 +320,7 @@ namespace MagicLeap
         /// <summary>
         /// Stop capturing video.
         /// </summary>
-        public void EndCapture(bool captureCanceled = false)
+        public void EndCapture()
         {
             if (_isCapturing)
             {
@@ -334,16 +334,13 @@ namespace MagicLeap
                         _captureFilePath = null;
                     }
 
-                    if(!captureCanceled)
+                    if (_rawVideoCaptureMode)
                     {
-                        if (_rawVideoCaptureMode)
-                        {
-                            OnRawVideoCaptureEnded.Invoke();
-                        }
-                        else
-                        {
-                            OnVideoCaptureEnded.Invoke(_captureFilePath);
-                        }
+                        OnRawVideoCaptureEnded.Invoke();
+                    }
+                    else
+                    {
+                        OnVideoCaptureEnded.Invoke(_captureFilePath);
                     }
 
                     _isCapturing = false;
@@ -539,7 +536,7 @@ namespace MagicLeap
             {
                 if (_isCapturing)
                 {
-                    EndCapture(true);
+                    EndCapture();
                 }
 
                 if (_rawVideoCaptureMode)
@@ -554,7 +551,6 @@ namespace MagicLeap
                     #if PLATFORM_LUMIN
                     MLCamera.OnRawVideoFrameAvailableYUV += OnRawCaptureDataReceived;
                     _videoCaptureVisualizer.DisablePreview();
-
                     #endif
                 }
                 _rawVideoCaptureMode = !_rawVideoCaptureMode;

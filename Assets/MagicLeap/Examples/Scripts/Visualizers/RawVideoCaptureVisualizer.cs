@@ -55,7 +55,7 @@ namespace MagicLeap
                 return;
             }
 
-            _screenRenderer.enabled = false;
+            _screenRenderer.enabled = true;
         }
 
         /// <summary>
@@ -73,6 +73,7 @@ namespace MagicLeap
         /// </summary>
         public void OnCaptureEnded()
         {
+            // Manage canvas visuals
             _recordingIndicator.SetActive(false);
         }
 
@@ -106,7 +107,6 @@ namespace MagicLeap
         /// </summary>
         public void OnRawCaptureEnded()
         {
-            _recordingIndicator.SetActive(false);
             _screenRenderer.enabled = false;
         }
 

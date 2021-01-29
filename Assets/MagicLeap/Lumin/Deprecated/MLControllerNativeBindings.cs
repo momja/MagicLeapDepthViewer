@@ -13,13 +13,12 @@
 // Disable warnings about missing documentation for native interop.
 #pragma warning disable 1591
 
-#if PLATFORM_LUMIN
-
 namespace UnityEngine.XR.MagicLeap
 {
     using System;
     using System.Runtime.InteropServices;
 
+    #if PLATFORM_LUMIN
     namespace Native
     {
         /// <summary>
@@ -68,6 +67,7 @@ namespace UnityEngine.XR.MagicLeap
             public static extern bool MLInputStartControllerFeedbackPatternEffectLED(byte controllerId, MLInputControllerFeedbackEffectLED effect, MLInputControllerFeedbackEffectSpeedLED speed, MLInputControllerFeedbackPatternLED pattern, MLInputControllerFeedbackColorLED color, uint duration);
         }
     }
+    #endif
 
     /// <summary>
     /// The tracking mode used for the controller.
@@ -118,4 +118,3 @@ namespace UnityEngine.XR.MagicLeap
         High = 3,
     }
 }
-#endif

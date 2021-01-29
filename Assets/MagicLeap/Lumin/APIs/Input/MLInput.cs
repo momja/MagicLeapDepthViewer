@@ -664,7 +664,6 @@ namespace UnityEngine.XR.MagicLeap
 
             this.DestroyNativeTracker();
             this.CleanupStaticEvents();
-            this.CleanupControllersRegisteredToGestureSubsystem();
         }
 
 #if !DOXYGEN_SHOULD_SKIP_THIS
@@ -1009,27 +1008,7 @@ namespace UnityEngine.XR.MagicLeap
                 }
                 else
                 {
-                    MLResult result = MLPrivileges.Start();
-                    if (result.IsOk)
-                    {
-                        result = MLPrivileges.CheckPrivilege(MLPrivileges.Id.ControllerPose);
-                        if (result == MLResult.Code.PrivilegeNotGranted)
-                        {
-                            MLPluginLog.WarningFormat("MLInput.InitControllers failed to initialize because the CotrollerPose privilege was not granted. Reason: {0}", MLResult.CodeToString(MLResult.Code.PrivilegeNotGranted));
-                        }
-                        else
-                        {
-                            MLPluginLog.ErrorFormat("MLInput.InitControllers failed to initialize controller tracker. Reason: {0}", MLResult.CodeToString(MLResult.Code.UnspecifiedFailure));
-                        }
-
-                    }
-                    else
-                    {
-                        MLPluginLog.ErrorFormat("MLInput.MLPrivileges failed to start. Reason: {0}", MLResult.CodeToString(MLResult.Code.UnspecifiedFailure));
-                        MLPluginLog.ErrorFormat("MLInput.InitControllers failed to initialize controller tracker. Reason: {0}", MLResult.CodeToString(MLResult.Code.UnspecifiedFailure));
-                    }
-
-                    MLPrivileges.Stop();
+                    MLPluginLog.ErrorFormat("MLInput.InitControllers failed to initialize controller tracker. Reason: {0}", MLResult.CodeToString(MLResult.Code.UnspecifiedFailure));
                 }
             }
 
@@ -1037,27 +1016,7 @@ namespace UnityEngine.XR.MagicLeap
             NativeBindings.SetControllerGesturesEnabled(true);
             if (!NativeBindings.IsControllerGesturesEnabled())
             {
-                MLResult result = MLPrivileges.Start();
-                if (result.IsOk)
-                {
-                    result = MLPrivileges.CheckPrivilege(MLPrivileges.Id.ControllerPose);
-                    if (result == MLResult.Code.PrivilegeNotGranted)
-                    {
-                        MLPluginLog.WarningFormat("MLInput.InitControllers failed to initialize because the CotrollerPose privilege was not granted. Reason: {0}", MLResult.CodeToString(MLResult.Code.PrivilegeNotGranted));
-                    }
-                    else
-                    {
-                        MLPluginLog.ErrorFormat("MLInput.InitControllers failed to initialize controller tracker. Reason: {0}", MLResult.CodeToString(MLResult.Code.UnspecifiedFailure));
-                    }
-
-                }
-                else
-                {
-                    MLPluginLog.ErrorFormat("MLInput.MLPrivileges failed to start. Reason: {0}", MLResult.CodeToString(MLResult.Code.UnspecifiedFailure));
-                    MLPluginLog.ErrorFormat("MLInput.InitControllers failed to initialize controller tracker. Reason: {0}", MLResult.CodeToString(MLResult.Code.UnspecifiedFailure));
-                }
-
-                MLPrivileges.Stop();
+                MLPluginLog.ErrorFormat("MLInput.InitControllers failed to enable controller gestures. Reason: {0}", MLResult.CodeToString(MLResult.Code.UnspecifiedFailure));
             }
 
             // Register Callbacks
@@ -1262,23 +1221,6 @@ namespace UnityEngine.XR.MagicLeap
             else if (!MLResult.IsOK(resultCode))
             {
                 MLPluginLog.ErrorFormat("MLInput.CleanupNativeCallbacks failed to unset tablet callbacks. Reason: {0}", MLResult.CodeToString(resultCode));
-            }
-        }
-
-        /// <summary>
-        /// Dipose the controllers that have registered to the gesture subsystem.
-        /// </summary>
-        private void CleanupControllersRegisteredToGestureSubsystem()
-        {
-            if(this.controllers != null)
-            {
-                for(int i = 0; i < controllers.Length; i++)
-                {
-                    if(this.controllers[i] != null)
-                    {
-                        this.controllers[i].Dispose();
-                    }
-                }
             }
         }
 

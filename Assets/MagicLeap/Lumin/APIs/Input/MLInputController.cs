@@ -12,7 +12,6 @@
 
 namespace UnityEngine.XR.MagicLeap
 {
-    using System;
     using UnityEngine.XR.InteractionSubsystems;
 
     #if PLATFORM_LUMIN
@@ -32,7 +31,7 @@ namespace UnityEngine.XR.MagicLeap
         /// <summary>
         /// Contains state information for a controller.
         /// </summary>
-        public partial class Controller : IDisposable
+        public partial class Controller
         {
             #if PLATFORM_LUMIN
             /// <summary>
@@ -86,7 +85,11 @@ namespace UnityEngine.XR.MagicLeap
             /// </summary>
             ~Controller()
             {
-                this.Cleanup();
+                if (MLDevice.GestureSubsystem != null)
+                {
+                    MLDevice.GestureSubsystem.onTouchpadGestureChanged -= this.HandleOnTouchpadGestureChanged;
+                    MLDevice.UnregisterGestureSubsystem();
+                }
             }
 
             /// <summary>
@@ -484,9 +487,9 @@ namespace UnityEngine.XR.MagicLeap
             /// </summary>
             public enum FeedbackPatternVibe : uint
             {
-                /// <summary>
-                /// Pattern: None
-                /// </summary>
+               /// <summary>
+               /// Pattern: None
+               /// </summary>
                 None = 0,
 
                 /// <summary>
@@ -680,7 +683,7 @@ namespace UnityEngine.XR.MagicLeap
                     }
 
                     // IsBumperDown
-                    if (device.TryGetFeatureValue(CommonUsages.gripButton, out bool deviceIsBumperDown))
+                    if (device.TryGetFeatureValue(CommonUsages.secondaryButton, out bool deviceIsBumperDown))
                     {
                         if (this.IsBumperDown != deviceIsBumperDown)
                         {
@@ -892,18 +895,7 @@ namespace UnityEngine.XR.MagicLeap
 
                 return result;
             }
-            #endif
 
-            /// <summary>
-            /// Used to clean up the object immediately instead of relying on it's destructor.
-            /// </summary>
-            public void Dispose()
-            {
-                this.Cleanup();
-                GC.SuppressFinalize(this);
-            }
-
-            #if PLATFORM_LUMIN
             /// <summary>
             /// Occurs when a touchpad gesture changes.
             /// </summary>
@@ -941,20 +933,6 @@ namespace UnityEngine.XR.MagicLeap
                 }
             }
             #endif
-
-            /// <summary>
-            /// Disables key poses and unregisters from the gesture subsystem.
-            /// </summary>
-            private void Cleanup()
-            {
-                #if PLATFORM_LUMIN
-                if (MLDevice.GestureSubsystem != null)
-                {
-                    MLDevice.GestureSubsystem.onTouchpadGestureChanged -= this.HandleOnTouchpadGestureChanged;
-                    MLDevice.UnregisterGestureSubsystem();
-                }
-                #endif
-            }
         }
     }
 }

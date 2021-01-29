@@ -259,7 +259,12 @@ namespace UnityEngine.XR.MagicLeap
 
             if (instance != null && instance.gestureSubsystem == null)
             {
-                instance.gestureSubsystem = instance.gameObject.AddComponent<MagicLeapGestures>();
+                // Attempt to find or add the MagicLeapGestures component.
+                instance.gestureSubsystem = instance.gameObject.GetComponent<MagicLeapGestures>();
+                if (instance.gestureSubsystem == null)
+                {
+                    instance.gestureSubsystem = instance.gameObject.AddComponent<MagicLeapGestures>();
+                }
             }
         }
 
@@ -276,14 +281,13 @@ namespace UnityEngine.XR.MagicLeap
             if (instance.gestureSubsystemStartCount > 0)
             {
                 instance.gestureSubsystemStartCount--;
+            }
 
-                // Only destroy the component when all instances have been removed.
-                if (instance.gestureSubsystemStartCount == 0)
-                {
-                    // Immediately removes the Gesture Subsystem component because the subsystem is normally unregistered inside the OnDestroy() of another object.
-                    DestroyImmediate(instance.gestureSubsystem);
-                    instance.gestureSubsystem = null;
-                }
+            // Only destroy the GameObject, when all instances have been removed.
+            if (instance.gestureSubsystemStartCount == 0 && instance.gestureSubsystem != null)
+            {
+                // Remove the Gesture Subsystem component.
+                GameObject.Destroy(instance.gestureSubsystem);
             }
         }
 

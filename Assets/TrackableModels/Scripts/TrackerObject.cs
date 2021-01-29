@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using Vuforia;
 
-public class TrackerObject : MonoBehaviour
+public class TrackerObject : DefaultTrackableEventHandler
 {
     public static List<TrackerObject> trackerObjects = new List<TrackerObject>();
     private static List<Vector3> previousCoords = new List<Vector3>();
@@ -26,12 +26,26 @@ public class TrackerObject : MonoBehaviour
     [HideInInspector]
     public bool visible = false;
 
-    public TrackerObject() {
+    private readonly List<TrackableBehaviour.Status> _mTrackingFound = new List<TrackableBehaviour.Status>() {
+        TrackableBehaviour.Status.DETECTED,
+        TrackableBehaviour.Status.TRACKED,
+
+        // Device Positioning
+        TrackableBehaviour.Status.EXTENDED_TRACKED,
+    };
+
+    private readonly List<TrackableBehaviour.Status> _mTrackingLost = new List<TrackableBehaviour.Status>() {
+        TrackableBehaviour.Status.TRACKED,
+        TrackableBehaviour.Status.NO_POSE,
+    };
+
+    public TrackerObject() : base() {
         trackerObjects.Add(this);
     }
 
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         // transform offset to offset in world space
         originOffset = transform.position;
         originOffset /= transform.localScale.x;
@@ -57,13 +71,15 @@ public class TrackerObject : MonoBehaviour
         }
     }
 
-    void VuforiaTargetLost() {
+    protected override void OnTrackingLost() {
+        base.OnTrackingLost();
         print($"Target {posIdentifier} lost");
         // cylinderOffset.SetActive(false);
         visible = false;
     }
 
-    void VuforiaTargetFound() {
+    protected override void OnTrackingFound() {
+        base.OnTrackingFound();
         print($"Target {posIdentifier} found");
         // cylinderOffset.SetActive(true);
         visible = true;

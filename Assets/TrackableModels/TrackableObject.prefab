@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 763688511053539795}
   - component: {fileID: 763688511053539794}
-  - component: {fileID: 763688511053539793}
   - component: {fileID: 763688511053539792}
   - component: {fileID: 763688511053539799}
   - component: {fileID: 763688511053539798}
@@ -57,25 +56,6 @@ MonoBehaviour:
   mWidth: 0.2
   mHeight: 0.2
   mRuntimeTexture: {fileID: 0}
---- !u!114 &763688511053539793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 763688511053539796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StatusFilter: 2
-  OnTargetFound:
-    m_PersistentCalls:
-      m_Calls: []
-  OnTargetLost:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &763688511053539792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,6 +127,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bfc396bc6d9a4436a024adda331bb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StatusFilter: 0
+  OnTargetFound:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTargetLost:
+    m_PersistentCalls:
+      m_Calls: []
   originRotationOffset: {x: 0, y: 0, z: 0, w: 0}
   modelCenterApprox: {x: 0, y: 0, z: 0}
   posIdentifier: 0
