@@ -3,22 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.MagicLeap;
 
-public class Control6DOF : MonoBehaviour {
+public class Control6DOF : MonoBehaviour
+{
     #region Private Variables
     private MLInput.Controller _controller;
     #endregion
-  
+
     #region Unity Methods
-    void Start () {
+    void Start()
+    {
         //Start receiving input by the Control
-        MLInput.Start();
         _controller = MLInput.GetController(MLInput.Hand.Left);
     }
-    void OnDestroy () {
+    void OnDestroy()
+    {
         //Stop receiving input by the Control
-        MLInput.Stop();
     }
-    void Update () {
+    void Update()
+    {
         if (_controller.IsBumperDown)
         {
             transform.GetChild(0).gameObject.SetActive(true);

@@ -1,14 +1,28 @@
 {
   "dependencies": {
+    "com.ivlab.remoterendering": {
+      "version": "https://github.umn.edu/ivlab-cs/RemoteRendering-UnityPackage.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "b5e9ead8861832af97bf7dd1a590b07cd39c4298"
+    },
+    "com.ivlab.sensel-morph-utils": {
+      "version": "ssh://git@github.umn.edu/ivlab-cs/Sensel-Morph-UnityPackage.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "24a2f468d3cedb6e74a5130ee60701ede6aaa8f6"
+    },
     "com.ivlab.vprnutils": {
       "version": "ssh://git@github.umn.edu/ivlab-cs/VRPN-Client-UnityPackage.git",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "72528375f6ab77c9a578f0bbf4be410b62f38c60"
+      "hash": "6e70ec5a73e7ad71737194494a0d195fe67628c4"
     },
     "com.ptc.vuforia.engine": {
-      "version": "9.3.3",
+      "version": "9.6.3",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -147,6 +161,52 @@
         "com.unity.xr.management": "3.0.6"
       },
       "url": "https://packages.unity.com"
+    },
+    "edu.umn.cs.ivlab.abrengine": {
+      "version": "ssh://git@github.umn.edu/ivlab-cs/ABREngine-UnityPackage.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "94b5d0a1e41ad1445d81e3d5dca3ce3631015113"
+    },
+    "edu.umn.cs.ivlab.jsondiffpatch": {
+      "version": "ssh://git@github.umn.edu/ivlab-cs/JsonDiffPatch-UnityPackage.git#v2.3.0",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "edu.umn.cs.ivlab.newtonsoft.json": "git@github.umn.edu/ivlab-cs/NewtonsoftJson-UnityPackage.git#v12.0.3"
+      },
+      "hash": "f7869b85c930848b4c9e9c15aa5be3b16c5300fe"
+    },
+    "edu.umn.cs.ivlab.newtonsoft.json": {
+      "version": "ssh://git@github.umn.edu/ivlab-cs/NewtonsoftJson-UnityPackage.git#v12.0.3",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "0b76a48281e2f21f07bdf6cd0da1da6df107425d"
+    },
+    "edu.umn.cs.ivlab.newtonsoft.json.schema": {
+      "version": "ssh://git@github.umn.edu/ivlab-cs/JsonSchema-UnityPackage.git#v3.0.13",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "edu.umn.cs.ivlab.newtonsoft.json": "git@github.umn.edu/ivlab-cs/NewtonsoftJson-UnityPackage.git#12.0.3"
+      },
+      "hash": "1513279bf10e7650451da747bdbd401eca4bf69c"
+    },
+    "edu.umn.cs.ivlab.objimport": {
+      "version": "ssh://git@github.umn.edu/ivlab-cs/OBJImport-UnityPackage.git#v2.0.2",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "9762e403a6875612dd5122cd71636818c943626e"
+    },
+    "edu.umn.cs.ivlab.utilities": {
+      "version": "ssh://git@github.umn.edu/ivlab-cs/IVLab-Utilities-UnityPackage.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "8cdcd6d6d58eed25b36d127db5dee39fcb3d279f"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

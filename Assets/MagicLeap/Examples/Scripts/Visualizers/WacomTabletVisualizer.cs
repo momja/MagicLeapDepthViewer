@@ -175,9 +175,9 @@ namespace MagicLeap
 
         private void Awake()
         {
-            #if PLATFORM_LUMIN
+#if PLATFORM_LUMIN
             MLInput.OnTabletConnected += HandleOnTabletConnect;
-            #endif
+#endif
         }
         /// <summary>
         /// Validates fields, sets up the canvas, and registers for the MLInput tablet callbacks.
@@ -195,19 +195,19 @@ namespace MagicLeap
             SetupCanvas();
             UpdateColor();
 
-            #if PLATFORM_LUMIN
+#if PLATFORM_LUMIN
             // Register for callbacks.
             MLInput.OnTabletDisconnected += HandleOnTabletDisconnect;
             MLInput.OnTabletButtonUp += HandleOnTabletButtonUp;
             MLInput.OnTabletButtonDown += HandleOnTabletButtonDown;
             MLInput.OnTabletPenTouch += HandleOnTabletPenTouch;
             MLInput.OnTabletRingTouch += HandleOnTabletRingTouch;
-            #endif
+#endif
         }
 
         void OnDestroy()
         {
-            #if PLATFORM_LUMIN
+#if PLATFORM_LUMIN
             // Un-register for callbacks.
             MLInput.OnTabletConnected -= HandleOnTabletConnect;
             MLInput.OnTabletDisconnected -= HandleOnTabletDisconnect;
@@ -216,8 +216,7 @@ namespace MagicLeap
             MLInput.OnTabletPenTouch -= HandleOnTabletPenTouch;
             MLInput.OnTabletRingTouch -= HandleOnTabletRingTouch;
             // Stop the input service.
-            MLInput.Stop();
-            #endif
+#endif
         }
 
         /// <summary>
@@ -301,16 +300,6 @@ namespace MagicLeap
                 Debug.LogError("Error: WacomTabletVisualizer._colors is not set, disabling script.");
                 return false;
             }
-
-            #if PLATFORM_LUMIN
-            // Attempt to start the input service.
-            MLResult result = MLInput.Start(new MLInput.Configuration(false));
-            if (!result.IsOk)
-            {
-                Debug.LogErrorFormat("Error: WacomTabletVisualizer failed starting MLInput, disabling script. Reason: {0}", result);
-                return false;
-            }
-            #endif
 
             // Initialize and create the button dictionary.
             _deviceButtons = new Dictionary<MLInput.TabletDeviceButton, List<Renderer>>();
@@ -454,7 +443,7 @@ namespace MagicLeap
             }
 
             // Pen - Erase Mode
-            if(tabletButton == MLInput.TabletDeviceButton.Button11)
+            if (tabletButton == MLInput.TabletDeviceButton.Button11)
             {
                 ButtonErase = true;
             }
@@ -463,7 +452,7 @@ namespace MagicLeap
             LastButtonState = true;
         }
 
-        #if PLATFORM_LUMIN
+#if PLATFORM_LUMIN
         private void HandleOnTabletPenTouch(byte tabletId, MLInput.TabletState tabletState)
         {
             // Set the location of the pen.
@@ -514,7 +503,7 @@ namespace MagicLeap
             LastIsTouching = tabletState.IsPenTouchActive;
             LastToolType = tabletState.ToolType;
         }
-        #endif
+#endif
 
         private void HandleOnTabletRingTouch(byte tabletId, int touchRingValue, ulong timestamp)
         {

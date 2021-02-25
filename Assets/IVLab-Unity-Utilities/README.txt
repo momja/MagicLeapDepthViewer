@@ -1,1 +1,0 @@
-This is a folder of useful Unity functions for use around the IV Lab

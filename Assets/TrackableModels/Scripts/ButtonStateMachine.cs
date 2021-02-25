@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEngine.XR.MagicLeap;
 
-public class ButtonStateMachine : MonoBehaviour {
+public class ButtonStateMachine : MonoBehaviour
+{
     [HideInInspector]
     public float triggerValue = 0.0f;
     [HideInInspector]
@@ -15,8 +16,8 @@ public class ButtonStateMachine : MonoBehaviour {
     private IButtonState state;
     private bool _triggerEnabled = false;
 
-    void Start() {
-        MLInput.Start();
+    void Start()
+    {
         MLInput.OnControllerButtonDown += OnButtonDown;
         MLInput.OnControllerButtonUp += OnButtonUp;
         _controller = MLInput.GetController(MLInput.Hand.Left);
@@ -25,57 +26,74 @@ public class ButtonStateMachine : MonoBehaviour {
         this.setState(this.idleState); // We always start in idle
     }
 
-    void Update() {
+    void Update()
+    {
         CheckTrigger();
     }
 
-    void OnDestroy() {
+    void OnDestroy()
+    {
         MLInput.OnControllerButtonDown -= OnButtonDown;
         MLInput.OnControllerButtonUp -= OnButtonUp;
-        MLInput.Stop();
     }
 
-    public ButtonStateMachine() {
+    public ButtonStateMachine()
+    {
     }
-    public IButtonState getIdleState() {
+    public IButtonState getIdleState()
+    {
         return this.idleState;
     }
-    public IButtonState getOffsetScreenSpaceState() {
+    public IButtonState getOffsetScreenSpaceState()
+    {
         return this.offsetScreenSpaceState;
     }
-    public void setState(IButtonState state) {
+    public void setState(IButtonState state)
+    {
         if (this.state != null)
             this.state.deactivate();
         this.state = state;
         this.state.activate();
     }
 
-    void OnButtonDown(byte controllerId, MLInput.Controller.Button button) {
-        if (button == MLInput.Controller.Button.Bumper) {
+    void OnButtonDown(byte controllerId, MLInput.Controller.Button button)
+    {
+        if (button == MLInput.Controller.Button.Bumper)
+        {
             this.bumperPressed = true;
             this.state.bumperButtonDown();
         }
         print("Button pressed");
     }
 
-    void OnButtonUp(byte controllerId, MLInput.Controller.Button button) {
-        if ((button == MLInput.Controller.Button.HomeTap)) {
+    void OnButtonUp(byte controllerId, MLInput.Controller.Button button)
+    {
+        if ((button == MLInput.Controller.Button.HomeTap))
+        {
             this.homePressed = false;
             this.state.homeButtonUp();
         }
-        if ((button == MLInput.Controller.Button.Bumper)) {
+        if ((button == MLInput.Controller.Button.Bumper))
+        {
             this.bumperPressed = false;
             this.state.bumperButtonUp();
         }
     }
 
-    void CheckTrigger() {
+    void CheckTrigger()
+    {
+        if (Application.isPlaying && Application.isEditor)
+        {
+            return;
+        }
         this.triggerValue = _controller.TriggerValue;
-        if (this.triggerValue > 0.5 && !this._triggerEnabled) {
+        if (this.triggerValue > 0.5 && !this._triggerEnabled)
+        {
             this.state.triggerButtonDown();
             this._triggerEnabled = true;
         }
-        else if (this.triggerValue < 0.5 && this._triggerEnabled) {
+        else if (this.triggerValue < 0.5 && this._triggerEnabled)
+        {
             this.state.triggerButtonUp();
             this._triggerEnabled = false;
         }

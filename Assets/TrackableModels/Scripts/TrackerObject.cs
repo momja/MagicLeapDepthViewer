@@ -39,7 +39,8 @@ public class TrackerObject : DefaultTrackableEventHandler
         TrackableBehaviour.Status.NO_POSE,
     };
 
-    public TrackerObject() : base() {
+    public TrackerObject() : base()
+    {
         trackerObjects.Add(this);
     }
 
@@ -55,8 +56,9 @@ public class TrackerObject : DefaultTrackableEventHandler
 
     void Update()
     {
-        if (visible) {
-            modelCenterApprox = transform.TransformPoint(Quaternion.Inverse(originRotationOffset)* -originOffset);
+        if (visible)
+        {
+            modelCenterApprox = transform.TransformPoint(Quaternion.Inverse(originRotationOffset) * -originOffset);
         }
     }
 
@@ -71,41 +73,48 @@ public class TrackerObject : DefaultTrackableEventHandler
         }
     }
 
-    protected override void OnTrackingLost() {
+    protected override void OnTrackingLost()
+    {
         base.OnTrackingLost();
-        print($"Target {posIdentifier} lost");
         // cylinderOffset.SetActive(false);
         visible = false;
     }
 
-    protected override void OnTrackingFound() {
+    protected override void OnTrackingFound()
+    {
         base.OnTrackingFound();
-        print($"Target {posIdentifier} found");
         // cylinderOffset.SetActive(true);
         visible = true;
     }
 
-    public static int getVisibleTrackerCount() {
+    public static int getVisibleTrackerCount()
+    {
         int cnt = 0;
-        foreach (TrackerObject t in trackerObjects) {
-            if (t.visible) {
+        foreach (TrackerObject t in trackerObjects)
+        {
+            if (t.visible)
+            {
                 cnt++;
             }
         }
         return cnt;
     }
 
-    public static Transform getApproxModelCenter() {
+    public static Transform getApproxModelCenter()
+    {
         return lastUpdatedTransform;
     }
 
-    public static void setApproxModelCenter() {
+    public static int setApproxModelCenter()
+    {
         Vector3 avgCenter = Vector3.zero;
         Vector3 avgLookAtRotation = Vector3.zero;
         Vector3 avgLookUpRotation = Vector3.zero;
         int enabledTrackerCount = 0;
-        foreach (TrackerObject tracker in trackerObjects) {
-            if (tracker.visible) {
+        foreach (TrackerObject tracker in trackerObjects)
+        {
+            if (tracker.visible)
+            {
                 avgCenter += tracker.modelCenterApprox;
                 Quaternion upOrientedQuat = tracker.transform.rotation * Quaternion.Inverse(tracker.originRotationOffset);
                 avgLookAtRotation += upOrientedQuat * Vector3.up;
@@ -114,17 +123,22 @@ public class TrackerObject : DefaultTrackableEventHandler
             }
         }
         avgCenter /= enabledTrackerCount;
-        if (TargetSettings.Instance.hideOnMissingTrackers && enabledTrackerCount == 0 || TargetSettings.Instance.model.transform == null) {
+        if (enabledTrackerCount == 0 || TargetSettings.Instance.model.transform == null)
+        {
             // Hide model if no trackers are found
-            TargetSettings.Instance.model.SetActive(false);
-            return;
-        } else {
+            TargetSettings.Instance.model.SetActive(TargetSettings.Instance.hideOnMissingTrackers);
+            return -1;
+        }
+        else
+        {
             TargetSettings.Instance.model.SetActive(true);
         }
         Vector3 center = Vector3.zero;
-        if (TargetSettings.Instance.smoothOverFrames > 0) {
+        if (TargetSettings.Instance.smoothOverFrames > 0)
+        {
             // ease movement over last n frames to smooth movements
-            if (previousCoords.Count >= TargetSettings.Instance.smoothOverFrames) {
+            if (previousCoords.Count >= TargetSettings.Instance.smoothOverFrames)
+            {
                 previousCoords.RemoveAt(0);
             }
             previousCoords.Add(avgCenter);
@@ -132,22 +146,27 @@ public class TrackerObject : DefaultTrackableEventHandler
             // Calculate eased movement
             float totalWeights = 0;
             int i = 0;
-            foreach (Vector3 coord in previousCoords) {
+            foreach (Vector3 coord in previousCoords)
+            {
                 float weight = i / previousCoords.Count;
                 totalWeights += weight;
-                center += coord; 
+                center += coord;
             }
             center /= previousCoords.Count;
-        } else {
+        }
+        else
+        {
             center = avgCenter;
         }
-        avgLookAtRotation = avgLookAtRotation/enabledTrackerCount;
+        avgLookAtRotation = avgLookAtRotation / enabledTrackerCount;
         TargetSettings.Instance.modelOffset.transform.rotation = Quaternion.LookRotation(avgLookUpRotation, avgLookAtRotation);
         TargetSettings.Instance.model.transform.position = center;
         lastUpdatedTransform = TargetSettings.Instance.model.transform;
+        return 0;
     }
 
-    public static void printModelCenter() {
+    public static void printModelCenter()
+    {
         Transform t = getApproxModelCenter();
         Vector3 pos = t.position;
         Quaternion rot = t.rotation;

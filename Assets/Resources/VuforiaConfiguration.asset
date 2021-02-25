@@ -15,16 +15,15 @@ MonoBehaviour:
   vuforia:
     vuforiaLicenseKey: AdtZ4yH/////AAABmXpvMFvhAkU5liYAOlPlXdAwkrcBjX4tht1s5hHaJQ6zVsO0iG0pm3oyDcZ9/r6+UEDVDGijfyN+FmKbnG4BYuqqvXXo/SOQqKnWFDBc5oCZtGLm9UBxGnZCTbuyEbqJDTMeqpVBclk6YkaHr8Imfm7l0uhOoUh+6W77/QjIwvaPdPma5Rt38ziyABp7xq2Pcx8YejdruVCYSn3ED1BWwxPv+ZXzPGbZots9uA9X/3LyTwHuEteG/hhl4FASUNYq/vPVY77q4Ah/LUkRCUFbWJhVI2Yk0WWIWNtgWgPYw9KqCNVFiYjrpo19+O5jzAgs5dUgm4PSPKpMHawwCaRJZsV8F7qzdGMuBJ4rbwGHC1P7
     ufoLicenseKey: QVZWbVNsVC8vLy8vQUFBQUtLelB4UjJKODBWSHFZb1NmY2lidTgwRXZMWFhTNGQ3Zzk1ZS8wNjRyd01Wcjh1dnF3ekVzTm1IQVNsMXh1VGw0eFM0VHFhWEw2WjdybjFzWSs5VU1qci9QVi8rM3ErOWdsRmo5d0dXcmNqY1MyNlZSbGxvYzB6V2FCdnVsWWJCcVdzUms5cStzRFJleFYvU2ltdGhuYkNPRkxtSDk2TWR5bk95Q3hveTBYOTNsZkxXWFZlcHF6NWN3RFZTUDdmNGoyNWdQc056TnJvQ2xYSWVsb3YxbHRUV0wwbEhKR0RBN3B4R3BtOFN1LzVrSW1vSDFValAzbE4xUGpCYVNvdkJpQTdYam9GSzBaZTBVbHA3dGFFRllSaWNPaUNLNVExQU9YMHpiQVpZdVNvY0h2ZWpGd1BsYU1SMWFWbXV1SzAwSDNzWCsxdlR6WkZCdVpkbHU5Z1JIVm9JUy9UcW5idytqQldjV2xzbFBnN2c=
-    delayedInitialization: 1
+    delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 4
     maxSimultaneousObjectTargets: 1
     virtualSceneScaleFactor: 1
     useDelayedLoadingObjectTargets: 0
     modelTargetRecoWhileExtendedTracked: 1
-    version: 9.3.3
-    eulaAcceptedVersions: '{"Values":["8.5","0.0","8.6","9.0","9.1","9.2","9.3"]}'
-    modelTargetMode: 0
+    version: 9.6.3
+    eulaAcceptedVersions: '{"Values":["8.5","0.0","8.6","9.0","9.1","9.2","9.3","9.6","8.1"]}'
   database:
     disableModelExtraction: 0
   videoBackground:
@@ -38,6 +37,9 @@ MonoBehaviour:
     arcoreRequirement: 1
     autoImportArcore: 1
   playmode:
+    mSequencePath: 
     playModeType: 0
   webcam:
     renderTextureLayer: 30
+  packageInformation:
+    ARFoundationVersion: 
